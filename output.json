@@ -1,0 +1,119 @@
+[
+    {
+        "completed_time": 1641480879,
+        "name": "workflow1",
+        "scheduled_at": 1641480759,
+        "tasks": [
+            {
+                "completed_at": 1641480779,
+                "name": "task1",
+                "started_at": 1641480759,
+                "worker": "worker2"
+            },
+            {
+                "completed_at": 1641480809,
+                "name": "task2",
+                "started_at": 1641480799,
+                "worker": "worker2"
+            },
+            {
+                "completed_at": 1641480829,
+                "name": "task3",
+                "started_at": 1641480819,
+                "worker": "worker2"
+            },
+            {
+                "completed_at": 1641480854,
+                "name": "task4",
+                "started_at": 1641480839,
+                "worker": "worker2"
+            },
+            {
+                "completed_at": 1641480879,
+                "name": "task5",
+                "started_at": 1641480869,
+                "worker": "worker2"
+            }
+        ]
+    },
+    {
+        "completed_time": 1641480944,
+        "name": "workflow2",
+        "scheduled_at": 1641480759,
+        "tasks": [
+            {
+                "completed_at": 1641480799,
+                "name": "task1",
+                "started_at": 1641480779,
+                "worker": "worker2"
+            },
+            {
+                "completed_at": 1641480819,
+                "name": "task2",
+                "started_at": 1641480809,
+                "worker": "worker2"
+            },
+            {
+                "completed_at": 1641480839,
+                "name": "task3",
+                "started_at": 1641480829,
+                "worker": "worker2"
+            },
+            {
+                "completed_at": 1641480869,
+                "name": "task4",
+                "started_at": 1641480854,
+                "worker": "worker2"
+            },
+            {
+                "completed_at": 1641480894,
+                "name": "task5",
+                "started_at": 1641480879,
+                "worker": "worker2"
+            },
+            {
+                "completed_at": 1641480904,
+                "name": "task6",
+                "started_at": 1641480894,
+                "worker": "worker2"
+            },
+            {
+                "completed_at": 1641480919,
+                "name": "task7",
+                "started_at": 1641480904,
+                "worker": "worker2"
+            },
+            {
+                "completed_at": 1641480934,
+                "name": "task8",
+                "started_at": 1641480919,
+                "worker": "worker2"
+            },
+            {
+                "completed_at": 1641480944,
+                "name": "task9",
+                "started_at": 1641480934,
+                "worker": "worker2"
+            }
+        ]
+    },
+    {
+        "completed_time": 1641480809,
+        "name": "workflow3",
+        "scheduled_at": 1641480799,
+        "tasks": [
+            {
+                "completed_at": 1641480804,
+                "name": "task1",
+                "started_at": 1641480799,
+                "worker": "worker2"
+            },
+            {
+                "completed_at": 1641480809,
+                "name": "task2",
+                "started_at": 1641480804,
+                "worker": "worker2"
+            }
+        ]
+    }
+]

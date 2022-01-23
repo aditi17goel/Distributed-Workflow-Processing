@@ -1,0 +1,145 @@
+[
+    {
+        "name": "workflow1",
+        "scheduled_at": 1641480759,
+        "tasks": [
+            {
+                "cost": 20,
+                "dependencies": [],
+                "description": "Fetch customer data",
+                "name": "task1"
+            },
+            {
+                "cost": 10,
+                "dependencies": [
+                    "task1"
+                ],
+                "description": "Extract order information",
+                "name": "task2"
+            },
+            {
+                "cost": 10,
+                "dependencies": [
+                    "task2"
+                ],
+                "description": "Run Order validation rules",
+                "name": "task3"
+            },
+            {
+                "cost": 15,
+                "dependencies": [
+                    "task2"
+                ],
+                "description": "Run Company validation rules",
+                "name": "task4"
+            },
+            {
+                "cost": 10,
+                "dependencies": [
+                    "task3",
+                    "task4"
+                ],
+                "description": "Post validation results",
+                "name": "task5"
+            }
+        ]
+    },
+    {
+        "name": "workflow2",
+        "scheduled_at": 1641480759,
+        "tasks": [
+            {
+                "cost": 20,
+                "dependencies": [],
+                "description": "Fetch customer data",
+                "name": "task1"
+            },
+            {
+                "cost": 10,
+                "dependencies": [
+                    "task1"
+                ],
+                "description": "Extract order information",
+                "name": "task2"
+            },
+            {
+                "cost": 10,
+                "dependencies": [
+                    "task2"
+                ],
+                "description": "Run Order validation rules",
+                "name": "task3"
+            },
+            {
+                "cost": 15,
+                "dependencies": [
+                    "task2"
+                ],
+                "description": "Run Company validation rules",
+                "name": "task4"
+            },
+            {
+                "cost": 15,
+                "dependencies": [
+                    "task2"
+                ],
+                "description": "Run Shipping validation rules",
+                "name": "task5"
+            },
+            {
+                "cost": 10,
+                "dependencies": [
+                    "task3"
+                ],
+                "description": "Refine order data",
+                "name": "task6"
+            },
+            {
+                "cost": 15,
+                "dependencies": [
+                    "task4"
+                ],
+                "description": "Refine company data",
+                "name": "task7"
+            },
+            {
+                "cost": 15,
+                "dependencies": [
+                    "task5"
+                ],
+                "description": "Refine shipping data",
+                "name": "task8"
+            },
+            {
+                "cost": 10,
+                "dependencies": [
+                    "task6",
+                    "task7",
+                    "task8"
+                ],
+                "description": "Post refinement results",
+                "name": "task9"
+            }
+        ]
+    },
+    {
+        "name": "workflow3",
+        "scheduled_at": 1641480799,
+        "tasks": [
+            {
+                "cost": 5,
+                "dependencies": [],
+                "description": "Fetch customer data",
+                "name": "task1"
+            },
+            {
+                "cost": 5,
+                "dependencies": [
+                    "task1"
+                ],
+                "description": "Extract personal customer information",
+                "name": "task2"
+            }
+        ]
+    }
+]
