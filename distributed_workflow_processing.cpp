@@ -110,7 +110,7 @@ public:
     }
 
     while(bfs_queue.size()){
-        pair<int,int> p = bfs_queue.front();
+      Pair <int p = bfs_queue.front();
         bfs_queue.pop();
         int workflow = p.first;
         int task = p.second;
@@ -152,7 +152,7 @@ public:
         long long int scheduled_at_time = workflow["scheduled_at"];
         start_time = min(start_time, scheduled_at_time);
     }
-    priority_queue <pair<int,int>> workers;
+    priority_queue Pair <int> workers;
     for(int i=1; i<=num_workers; i++){
         workers.push({start_time,i});
     }
@@ -188,7 +188,7 @@ public:
         }
         output_workflows[i]["completed_time"] = completed_time;
     }
-    
+
   }
 
   //writes the output to output.json file
@@ -198,7 +198,7 @@ public:
   }
 
   // primary function which takes workflows and number of workers and input and generates the ouput
-  void process_work(json _workflows, int _num_workers) {
+  void process_workflows(json _workflows, int _num_workers) {
     num_workers = _num_workers;
     workflows_size = _workflows.size();
     output_workflows = _workflows;
@@ -218,5 +218,5 @@ int main()
     // create a JSON object
     WorkflowModel wf_model("workflows_input.json", "workers_input.txt", "output.json");
     WorkflowExecutor wf_executor;
-    wf_executor.process_work(wf_model.workflows, wf_model.num_workers);
+    wf_executor.process_workflows(wf_model.workflows, wf_model.num_workers);
 }
